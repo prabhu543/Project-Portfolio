@@ -434,7 +434,7 @@ form .btn2{
     color: #ff004f;
 }
 
-/*------------------------css for small screen--------------------*/
+/*------------------------css for small screen--------------------
 
 nav .fa-regular ,nav .fa-solid{
     display: none;
@@ -514,4 +514,4 @@ nav .fa-regular ,nav .fa-solid{
     color: #61b752 ;
     margin-top: -40px;
     display: block;
-}
+}*/

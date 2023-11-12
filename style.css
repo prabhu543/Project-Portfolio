@@ -465,13 +465,13 @@ nav .fa-regular ,nav .fa-solid{
     }
 
     .header-text{
-        margin-top:100%;
-        font-size: 16px;
+        margin-top:320px;
+        font-size: 25px;
     }
 
     .header-text h1{
-        font-size:30px;
-        margin-top: 30px;
+        font-size:24px;
+        margin-top: 25px;
     }
 
     nav .fa-regular ,nav .fa-solid{
@@ -533,4 +533,43 @@ nav .fa-regular ,nav .fa-solid{
     color: #61b752 ;
     margin-top: -40px;
     display: block;
+}
+
+/*-------- My edit----------------------------------------------------*/
+
+
+/*--------home page-----------*/
+
+#element{
+    font-size: 26px;
+}
+
+.btn-tocontact{
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 18px;
+    background: #ff004f;
+    border: 4.5px solid #ff004f;
+    padding: 10px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn-tocontact:hover{
+    background:#88012c;
+}
+
+
+/*---------About----------*/
+
+#about{
+    margin-top: -160px;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
 }

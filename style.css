@@ -166,7 +166,7 @@ nav ul li a:hover::after{
 
 .tab-contents ul li{
     list-style: none;
-    margin-top: 12px;
+    margin-top: 10px;
     margin: 6px ;
     
 }
@@ -452,6 +452,11 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
+#msg{
+    color: #61b752 ;
+    margin-top: -40px;
+    display: block;
+}
 
 /*------------------------css for small screen--------------------*/
 
@@ -527,49 +532,70 @@ nav .fa-regular ,nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
-}
 
-#msg{
-    color: #61b752 ;
-    margin-top: -40px;
-    display: block;
-}
+
+
+
 
 /*-------- My edit----------------------------------------------------*/
 
 
 /*--------home page-----------*/
 
-#element{
-    font-size: 26px;
-}
+    #element{
+        font-size: 26px;
+    }
 
-.btn-tocontact{
-    display: inline-block;
-    margin-top: 50px;
-    font-size: 18px;
-    background: #ff004f;
-    border: 4.5px solid #ff004f;
-    padding: 10px 10px;
-    border-radius: 6px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    transition: background 0.5s;
-}
+    .btn-tocontact{
+        display: inline-block;
+        margin-top: 50px;
+        font-size: 18px;
+        background: #ff004f;
+        border: 4.5px solid #ff004f;
+        padding: 10px 10px;
+        border-radius: 6px;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        transition: background 0.5s;
+    }
 
-.btn-tocontact:hover{
-    background:#88012c;
-}
+    .btn-tocontact:hover{
+        background:#88012c;
+    }
 
 
-/*---------About----------*/
+    /*---------About----------*/
 
-#about{
-    margin-top: -160px;
-}
+    #about{
+        margin-top: -160px;
+    }
 
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
+    .about-col-1 img{
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .tab-contents.active-tab ul{
+        margin-top: -20px;
+    }
+
+
+    /*-------My Skills------*/
+
+    #Skills{
+        margin-top: -65px;
+    }
+    .container-skills {
+        margin-left: 28px;
+        margin-right: 28px;
+        height: auto;
+    }
+
+    .skillspic img {
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+    }
+    
 }

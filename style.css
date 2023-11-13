@@ -199,7 +199,7 @@ nav ul li a:hover::after{
 
 
 .container-skills {
-    display:inline-block;
+    display:block;
     justify-content: center;
     align-items: center;
     background:#444343;
@@ -590,15 +590,15 @@ nav .fa-regular ,nav .fa-solid{
         margin-top: -65px;
     }
     .container-skills {
-        margin-left: 28px;
-        margin-right: 28px;
+        margin-right: 30px;
+        margin-left: 30px;
         height: auto;
     }
 
     .skillspic img {
-        height: 40px;
-        width: 40px;
-        margin: 10px;
+        height: 60px;
+        width: 60px;
+        margin: 20px;
     }
     /*-----------------------Services---------------*/
 

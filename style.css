@@ -88,11 +88,11 @@ nav ul li a:hover::after{
 .btn-tocontact{
     display: block;
     margin-top: 70px;
-    font-size: 20px;
+    font-size: 15px;
     background: #ff004f;
     width: fit-content;
     border: 4.5px solid #ff004f;
-    padding: 14px 50px;
+    padding: 10px 20px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;

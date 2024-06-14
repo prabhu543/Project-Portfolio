@@ -457,6 +457,7 @@ nav .fa-regular ,nav .fa-solid{
     display: none;
 }
 
+
 @media only screen and (max-width:600px) {
     #header{
         background-image: url(images/phonebg.png);
@@ -619,4 +620,11 @@ nav .fa-regular ,nav .fa-solid{
     transition:transform 0.5s;
     }
 
+}
+
+#certificates{
+    max-width: 400px;
+    margin-left: 60px;
+    margin-right: 10px;
+    height: 60%;
 }

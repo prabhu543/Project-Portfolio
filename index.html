@@ -22,8 +22,7 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#certificates">Certifications</a></li>
-                    <li><a style="border: 1px solid #ff004f; background-color: #ff004f; border-radius: 10px; padding: 7px 10px;"
-                            href="#contact">Contact</a></li>
+                    <li><a style="border-radius: 10px; padding: 8px 10px;" href="#contact">Contact</a></li>
                     <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -33,11 +32,21 @@
                 <span id="element"></span>
             </div>
             <div>
-                <a style="color: white;" class="btn-tocontact" onclick="SubmitEvent" href="#contact">Contact and
-                    Resume</a>
+                <a style="color: white;" class="btn-tocontact" onclick="SubmitEvent" href="#contact">Contact Me</a>
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
+
+    </script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Developer', 'Android App Developer', 'Machine Learning Learnee'],
+            typeSpeed: 30,
+            loop: true
+        });
+    </script>
     <!-------------about----->
     <div id="about">
         <div class="container">
@@ -60,9 +69,20 @@
                         </div>
                     </div>
 
-                    <!--<div>
-                        <button id="openModalBtn" class="btn-tocontact">Know my Education and Hobbies</button>
-                    </div>-->
+                    <div style="display: flex;">
+                        <button id="openModalBtn" class="btn-tocontact" onclick="gotoskills()"
+                            style="padding: 4px 30px ">Know More</button>
+                    </div>
+
+                    <script>
+                        const gotocontact = function () {
+                            window.location.href = "#contact";
+                        }
+
+                        const gotoskills = function () {
+                            window.location.href = "#Skills";
+                        }
+                    </script>
 
 
                 </div>
@@ -87,29 +107,18 @@
                     <img src="images/css.png">
                     <img src="images/js.png">
                     <img src="images/react.png">
-                    <img src="images/angular.jpeg">
+                    <img src="images/hibernate.jpeg">
                     <img src="images/SpringBoot.png">
                     <img src="images/nodejs.png">
+                    <img src="images/postgres.jpeg">
                     <img src="images/php.png">
                     <img src="images/sql.webp">
                     <img src="images/mysql.png">
                     <img src="images/git.jpg">
                     <img src="images/github.png">
-                    <img src="images/canva.jpeg">
 
                 </div>
             </div>
-            <!--<div class="container-skills"  style="margin: 32px; border: 5px solid #ff004f;">
-            <h2>Github And Design</h2>
-            <div class="skillspic">
-                
-                
-            </div>
-            </div>
-
-            </div>
-
-        </div>-->
         </div>
 
         <!-------------------projects/portfolio-------->
@@ -120,7 +129,7 @@
                 <h1 class="sub-title">My Projects</h1>
                 <br>
 
-                <h2 style="text-align: left;">Web development Projects</h2>
+                <!-- <h2 style="text-align: left;">Web development Projects</h2> -->
                 <div class="work-list">
 
                     <div class="work">
@@ -146,7 +155,7 @@
 
                 <br><br>
                 <div id="appdev">
-                    <h2 style="text-align: left;">Android App Development</h2>
+                    <!-- <h2 style="text-align: left;">Android App Development</h2> -->
                     <div class="work-list" id="appdev projects">
                         <div class="work">
                             <img src="images/sgpacalcpic.jpg">
@@ -158,12 +167,11 @@
                             </div>
                         </div>
                         <div class="work">
-                            <img src="images/PhotoRoom-20231020_232757.png">
+                            <img src="images/spotify.png">
                             <div class="layer">
-                                <h3>Portfolio Application</h3>
+                                <h3>Spotify Clone React App</h3>
                                 <p>Click the button to view</p>
-                                <a href="https://www.linkedin.com/posts/m-rahul-bhat_my-portfolio-app-i-am-happy-to-share-my-activity-7182785695747305472-WbKK?utm_source=share&utm_medium=member_desktop"
-                                    target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
                     </div>
@@ -184,16 +192,14 @@
 
                 <div class="w3-content w3-display-container">
                     <img class="mySlides" src="images/ideathon.png" style="width:100%; height:470px;">
-                    <!--- ADD COURSERA DATA PYTHON ; Technoxian 
-            AND OTHRS FROM RESUME-->
+                    <img class="mySlides" src="images/cloudcomputingcertificate.png" style="width:100%; height:470px;">
                     <img class="mySlides" src="images/pythonwinners.jpeg" style="width:100%; height:470px;">
                     <img class="mySlides" src="images/pytrainer.jpeg" style="width:100%; height:470px;">
                     <img class="mySlides" src="images/ideathon certi.jpg" style="width:100%; height:470px;">
-                    <img class="mySlides" src="images/technoxian.jpg" style="width:100%; height:470px;">
 
+                    <img class="mySlides" src="images/technoxian.jpg" style="width:100%; height:470px;">
                     <img class="mySlides" src="images/qspider.jpg" style="width:100%; height:470px;">
                     <img class="mySlides" src="images/ml.jpg" style="width:100%; height:470px;">
-                    <img class="mySlides" src="images/ethical hacking.jpeg" style="width:100%; height:470px;">
                     <img class="mySlides" src="images/codsoft.jpeg" style="width:100%; height:470px;">
 
                     <button style="margin-left: -50px;" class="w3-button w3-black w3-display-left"
@@ -287,16 +293,7 @@
 
 </script>
 
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
 
-</script>
-<script>
-    var typed = new Typed('#element', {
-        strings: ['Full Stack Web Developer', 'Android App Developer', 'Machine Learning Learnee'],
-        typeSpeed: 30,
-        loop: true
-    });
-</script>
 
 <script>
     var sidemenu = document.getElementById("sidemenu");
@@ -331,7 +328,7 @@
             .catch(error => console.error('Error!', error.message))
     })
 </script>
-<script>
+<!-- <script>
     // Get a reference to the button
     var openModalBtn = document.getElementById("openModalBtn");
 
@@ -356,7 +353,7 @@
 
     // Attach event listener to close the modal when the close button is clicked
     closeButton.addEventListener("click", closeModal);
-</script>
+</script> -->
 
 </body>
 

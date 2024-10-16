@@ -391,7 +391,177 @@
     // Attach event listener to close the modal when the close button is clicked
     closeButton.addEventListener("click", closeModal);
 </script> -->
+<style>
+    /* Popup Styles */
+    #popup {
+        display: block;
+        /* Initially hidden */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1000;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgba(31, 29, 29, 0.8);
+        /* Black background with opacity */
+        display: flex;
+        /* Use flexbox to center */
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+    }
 
+    .popup-content {
+        background-color: transparent;
+        /* Background color */
+        position: relative;
+        /* Position relative to allow absolute positioning of close button */
+        max-width: 500px;
+        /* Set max width (reduced from 600px) */
+        width: 100%;
+        /* Responsive width (reduced from 80%) */
+        border: 1px solid #5f0924;
+        /* Remove border */
+        text-align: center;
+        /* Center the text */
+        transition: background-color 0.3s ease;
+        /* Smooth transition for background color */
+        height: 300px;
+        /* Set height (reduced from 450px) */
+        animation: popup 0.5s;
+        /* Add animation */
+    }
+
+    @keyframes popup {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .popup-content:hover {
+        background-color: rgba(39, 37, 37, 0.95);
+        border: 1px solid #5f0924;
+
+        /* Darker background on hover */
+    }
+
+    .popup-content img {
+        width: 100%;
+        /* Full width */
+        border: 1px solid #5f0924;
+
+        height: 100%;
+        /* Full height */
+        object-fit: cover;
+        /* Cover the area */
+        transition: filter 0.3s ease, transform 0.3s ease;
+        /* Smooth transition for filter */
+    }
+
+    .popup-content:hover img {
+        filter: brightness(0.2) blur(1px);
+        /* Darker and more blurred */
+        transform: scale(1.2);
+
+        /* Scale up on hover */
+    }
+
+    .text-overlay {
+        position: absolute;
+        /* Position absolute to overlay text */
+        top: 50%;
+        /* Center vertically */
+        left: 50%;
+        /* Center horizontally */
+        transform: translate(-50%, -50%);
+        /* Adjust position to truly center */
+        color: white;
+        /* Default text color */
+        text-align: center;
+        /* Center text */
+        z-index: 1;
+        /* Ensure text is below the close button */
+        display: none;
+        /* Hide by default */
+    }
+
+    .popup-content:hover .text-overlay {
+        display: block;
+        /* Show on hover */
+    }
+
+    .text-overlay h2 {
+        margin: 0;
+        /* Remove default margin */
+    }
+
+    .text-overlay p {
+        margin: 10px 0;
+        /* Add margin for spacing */
+    }
+
+    /* Button Styles */
+    .text-overlay a {
+        display: inline-block;
+        /* Make it a block element for padding */
+        padding: 10px 20px;
+        /* Add padding */
+        border-radius: 5px;
+        /* Add border radius */
+        background-color: #ff004f;
+        /* Background color */
+        color: white;
+        /* Text color */
+        text-decoration: none;
+        /* Remove underline */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        /* Smooth transition for background color and transform */
+    }
+
+    .text-overlay a:hover {
+        background-color: #e60045;
+        /* Darker background on hover */
+        transform: scale(1.05);
+        /* Slightly enlarge on hover */
+    }
+
+    .close-button {
+        position: absolute;
+        /* Position absolute to overlay close button */
+        top: 10px;
+        /* Position from top */
+        right: 10px;
+        /* Position from right */
+        cursor: pointer;
+        /* Change cursor to pointer */
+        font-size: 24px;
+        /* Font size for better visibility */
+        color: #fff !important;
+        /* Set color to white */
+        transition: color 0.3s ease;
+        /* Smooth transition for color */
+        z-index: 2;
+        /* Keep it on top */
+    }
+
+    .close-button:hover {
+        color: #ccc;
+        /* Change color on hover */
+    }
+</style>
 </body>
 
 </html>

@@ -31,6 +31,42 @@
                 <h1>Hi, My name is<span> Rahul</span><br>and I am a passionate</h1>
                 <span id="element"></span>
             </div>
+            <div id="popup">
+                <div class="popup-content">
+                    <span class="close-button" onclick="closePopup()"
+                        style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 24px; color: #000;">&times;</span>
+                    <img src="images/spotify.png" alt="Your Image"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="text-overlay">
+                        <h2>My Latest Project</h2>
+                        <p>Check out my latest project <br>Spotify Clone React App!</p>
+                        <a href="https://rahulbhat-spotify.netlify.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var popup = document.getElementById('popup');
+                let popupVisible = false; // Flag to track if the popup is already visible
+
+                function openPopup() {
+                    if (!popupVisible) { // Only open if not already visible
+                        popup.style.display = 'flex'; // Show the popup
+                        popupVisible = true; // Set the flag to true
+                        console.log("Popup opened");
+                        setTimeout(closePopup, 3500); // Close it after 3 seconds
+                    }
+                }
+
+                function closePopup() {
+                    popup.style.display = 'none'; // Hide the popup
+                    popupVisible = false; // Reset the flag
+                    console.log("Popup closed");
+                }
+
+                // Call openPopup to test
+                openPopup(); // You can call this function when you want to show the popup
+            </script>
             <div>
                 <a style="color: white;" class="btn-tocontact" onclick="SubmitEvent" href="#contact">Contact Me</a>
             </div>

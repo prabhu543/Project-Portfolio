@@ -38,6 +38,7 @@ nav {
   margin-right: -150px;
   margin-top: -20px;
 }
+
 .logo {
   width: 160px;
 }
@@ -47,6 +48,7 @@ nav ul li {
   list-style: none;
   margin: 10px 20px;
 }
+
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -154,12 +156,15 @@ nav ul li a:hover::after {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .modal-content {
   background-color: rgb(24, 23, 23);
   margin: 1% auto;
   margin-top: 50px;
-  width: 550px; /* Adjusted width */
-  height: 480px; /* Changed height to auto to allow content to expand */
+  width: 550px;
+  /* Adjusted width */
+  height: 480px;
+  /* Changed height to auto to allow content to expand */
 }
 
 .close-button {
@@ -201,6 +206,7 @@ nav ul li a:hover::after {
 #skills {
   margin-top: 80px;
 }
+
 .heading {
   text-align: center;
   font-size: 30px;
@@ -265,12 +271,14 @@ nav ul li a:hover::after {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .work-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
+
 .work {
   border-radius: 10px;
   position: relative;
@@ -279,7 +287,7 @@ nav ul li a:hover::after {
 
 .work img {
   width: 100%;
-  height:50vh;
+  height: 50vh;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
@@ -303,13 +311,14 @@ nav ul li a:hover::after {
   font-size: 14px;
   transition: height 0.5s;
 }
+
 .layer h3 {
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 .layer a {
-  color: #ff004f; 
+  color: #ff004f;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -346,6 +355,12 @@ nav ul li a:hover::after {
 
 /*-------------CERTIFICATE-----------------------*/
 
+.certificate img {
+  height: 470px;
+  width: 100%;
+}
+
+
 /*----------------------------contact------------------*/
 
 #contact {
@@ -373,6 +388,7 @@ nav ul li a:hover::after {
 .social-icons {
   margin-top: 30px;
 }
+
 .social-icons a {
   text-decoration: none;
   font-size: 40px;
@@ -386,6 +402,7 @@ nav ul li a:hover::after {
   color: #ff004f;
   transform: translateY(-5px);
 }
+
 .btn.btn2 {
   display: inline-block;
   background: #ff004f;
@@ -428,12 +445,14 @@ form .btn2 {
 .copyright i {
   color: #ff004f;
 }
+
 #msg {
   color: #61b752;
   margin-top: -40px;
   display: block;
 }
 
+/*==============================================================================================================================================================*/
 /*------------------------css for small screen--------------------*/
 
 nav .fa-regular,
@@ -451,6 +470,7 @@ nav .fa-solid {
     min-width: 400px;
     border: 1px solid white;
   }
+
   #header {
     background-image: url(images/phonebg.png);
   }
@@ -482,6 +502,7 @@ nav .fa-solid {
     z-index: 2;
     transition: right 0.5s;
   }
+
   nav ul li {
     display: block;
     margin: 25px;
@@ -571,6 +592,7 @@ nav .fa-solid {
     width: 400px;
     height: auto;
   }
+
   .container-skills {
     margin-right: 10px;
     margin-left: 20px;
@@ -585,6 +607,7 @@ nav .fa-solid {
     margin: 10px;
     margin-right: 17px;
   }
+
   /*-----------------------Services---------------*/
 
   .services-list {
@@ -606,12 +629,13 @@ nav .fa-solid {
 
   .work img {
     width: 100%;
-    height: 45vh;
-    margin-top: 40px;
+    height: 30vh;
+    margin-top: 20px;
     border-radius: 13px;
     display: block;
     transition: transform 0.5s;
   }
+
   #certificates {
     max-width: 400px;
     margin-left: 40px;
@@ -619,38 +643,62 @@ nav .fa-solid {
     height: 60%;
   }
 
-  @media only screen and (max-width: 600px) {
-    /* Existing styles... */
-  
-    #popup {
-      display: none; /* Initially hidden */
-      position: fixed; /* Stay in place */
-      z-index: 1000; /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow-y: auto; /* Enable vertical scrolling */
-      background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
-      display: flex; /* Use flexbox to center */
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-    }
-  
-    .popup-content {
-      background-color: transparent; /* Background color */
-      position: relative; /* Position relative to allow absolute positioning of close button */
-      max-width: 80%; /* Reduced max width for mobile */
-      width: 80%; /* Reduced responsive width for mobile */
-      border: none; /* Remove border */
-      text-align: center; /* Center the text */
-      transition: background-color 0.3s ease; /* Smooth transition for background color */
-      max-height: 70vh; /* Reduced maximum height for the popup content */
-      overflow-y: auto; /* Enable vertical scrolling within the popup content */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+
+  .certificate img {
+    height: 200px;
+    width: 100%;
+  }
+
+
+  /* Existing styles... */
+
+  #popup {
+    display: none;
+    /* Initially hidden */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background with opacity */
+    display: flex;
+    /* Use flexbox to center */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+  }
+
+  .popup-content {
+    background-color: transparent;
+    /* Background color */
+    position: relative;
+    /* Position relative to allow absolute positioning of close button */
+    max-width: 80%;
+    /* Reduced max width for mobile */
+    width: 80%;
+    /* Reduced responsive width for mobile */
+    border: none;
+    /* Remove border */
+    text-align: center;
+    /* Center the text */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
+    max-height: 70vh;
+    /* Reduced maximum height for the popup content */
+    overflow-y: auto;
+    /* Enable vertical scrolling within the popup content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

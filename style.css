@@ -470,15 +470,29 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px) {
-  * {
-    box-sizing: border-box;
+  body {
+    padding-top: 10%;
+    width: 100%;
+    /* Ensure full width */
+
   }
 
+  .container,
+  .container-skills {
+    padding: 10px;
+    /* Adjust padding to ensure it fits */
+    margin-left: 0;
+    /* Remove margin-left */
+    margin-right: 0;
+    /* Remove margin-right */
+  }
+
+  /* 
   body {
     padding-top: 10%;
     min-width: 400px;
     border: 1px solid white;
-  }
+  } */
 
   #header {
     background-image: url(images/phonebg.png);

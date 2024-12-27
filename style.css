@@ -470,6 +470,13 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
   body {
     padding-top: 10%;
     width: 100%;

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.main{
+    width: 100%;
+    /* background: red; */
+    height: 100vh;
+}
+
+.page1{
+    width: 100%;
+    background: #191a1d;
+    height: 100vh;
+    padding: 20px;
+}
+nav{
+    width: 100%;
+    /* height: 100px; */
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav img{
+    width: 340px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    /* background: rgba(255, 255, 0, 0.663); */
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.fa-bars { 
+    color: white; 
+    font-size: 22px; 
+    display: none; 
+}
+
+.content{
+    width: 100%;
+    /* background: red; */
+    height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content-text{
+    /* background: green; */
+    width: 50%;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 50px;
+    color: #fff;
+    font-size: 18px;
+}
+.content-text h1{
+    font-weight: 200;
+}
+#element{
+    font-size: 32px;
+    margin-top: 20px;
+    font-weight: 780;
+    /* background: red; */
+    color: #ff004f;
+}
+.content-text h1 span {
+    color: #ff004f;
+}
+#contact-btn{
+    background-color: #ff004f; 
+    border: none; 
+    color: white; 
+    padding: 15px 30px; 
+    text-align: center; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius:8px; 
+    transition: background-color 0.3s, transform 0.3s;
+    &:hover{
+        background-color: rgb(9, 41, 185);
+        transform: scale(1.08);
+    }
+}
+.content-img{
+    /* background: rgb(180, 153, 18); */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-img img{
+    max-width: 550px;
+}
+@media (max-width : 1070px) {
+    .content-img img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) { 
+    nav ul { 
+        display: none; 
+    } 
+    .fa-bars { 
+        display: block; 
+    } 
+    nav img{
+        width: 250px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content-img img{
+        width:330px;
+    }
+    .content-text{
+        width: 100%;
+    }
+    .content-text h1,
+    #element{
+        font-size: 25px;
+    }
+    #contact-btn{
+        padding: 10px 15px;
+        font-size: 14px; 
+    }
+}
